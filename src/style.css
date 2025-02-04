@@ -1,7 +1,7 @@
 body {
   font-family: "Roboto", serif;
   font-style: normal;
-  background-color: #f5f5f5;
+  background-color: #020403;
 }
 
 .container {
@@ -10,7 +10,7 @@ body {
 }
 
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)),
+  background-image: linear-gradient(rgba(2, 4, 3, 0.2), rgba(2, 4, 3, 0.3)),
     url(/images/beyonce-hero-picture.png);
   background-size: cover;
   background-position: center;
@@ -50,7 +50,56 @@ header a {
   display: inline-block;
 }
 
-@media (max-width: 900px) {
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer {
+  background-image: linear-gradient(rgba(2, 4, 3, 0.8), rgba(2, 4, 3, 0.8)),
+    url(/images/beyonce-footer.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  padding: 80px 0;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer li {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+
+footer h3 {
+  font-size: 24px;
+}
+
+footer p {
+  font-size: 16px;
+  line-height: 24px;
+  margin-right: 20px;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer .grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+}
+
+.coder {
+  text-align: center;
+  padding-top: 40px;
+}
+
+@media (max-width: 960px) {
   header {
     padding: 60px 0;
   }
